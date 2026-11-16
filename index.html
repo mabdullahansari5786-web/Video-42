@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transform</title>
+  </head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    /* There are different Types of Transforms are as:
+    1.Scale
+    2.ScaleX
+    3.ScaleY
+
+    4.Translate
+    5.TranslateX
+    6.TranslateY
+    7.TranslateZ
+    8.Translate3d
+
+    9.Skew
+    10.SkewX
+    11.SkewY
+    
+    12.Matrix
+    13.Matrix3d
+
+    14.Rotate
+    15.RotateY
+    16.RotateX */
+
+
+
+    .box{
+      height: 70px;
+      width: 70px;
+      background-color: aqua;
+      border: 2px solid black;
+      /* transform: rotate(0.25turn); */
+
+      /* One More and Famous Unit is Turn(0.125turn) and 1turn is equal to 360degree. */
+
+      /* transform: rotateX(45deg); */
+      /* transform: rotateY(180deg); */
+      /* transform: rotateZ(50deg); */
+      /* transform: scale(1.6); */
+      /* transform: scaleX(2); */
+      /* transform: scaleY(1); */
+      /* transform: scale3d(2); */
+      /* Skew ka matlab ap ye samajh lien ke uper left corner se pakar ke khansh diya ho aur neeche right conrner se pakar kar khanch diya ho. */
+      /* transform: skew(50deg); */
+      /* transform: skewX(30deg); */
+      /* transform: skewY(50deg); */
+      /* skew z-axis se rotate nahi hoti. */
+
+      /* Translate is Most useable property. */
+      /* transform: translate(100px); */
+      /* transform: translateX(100%); */
+      /* transform: translateY(250%); */
+      /* transform: translateZ(50px); */
+      /* transform: translate3d(700px); */
+
+      /* agar aik se zayada transform properties lagani ho to hum space de kar laga sakte hai. */
+
+      /* transform: translateY(100%) skewX(40deg) translateX(45%); */
+
+      /* Translate kab use kiya jata hai? */
+      /* Translate mainly tab use kiya jata hai jab hum navbar wagaira bana rahe hon hum translate property use kar ke ise gayab bhi kar sakte hai. */
+
+      /* transform: translateY(-50px); */
+
+      /* One property is that origin */
+      /* Man lo */
+      transform: rotate(45deg);
+      /* It is a advance topic but it's use is less */
+      transform-origin: 0% 0%;
+      /* ab jaise jaise main rotate ki value barhaun ga ye jo origin value set ki ho gi us ke according rotate ho gi. */
+
+    }
+
+    .container{
+      height: 50vh;
+      width: 50vw;
+      margin: 10px;
+      border: 2px solid purple;
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h2>Box</h2>
+      </div>
+    </div>
+  </body>
+</html>
